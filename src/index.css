@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'itchandelgothicarabic';
+  src: url('/public/assets/Fonts/itchandelgothicarabic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url(//db.onlinewebfonts.com/c/00308ca5d1bcfc9bde77840856e53423?family=ITCHandelGothicArabic-Md);
+@import url(//db.onlinewebfonts.com/c/65ed8d5f2d4b7efd47f7449fbdb1b12c?family=ITCHandelGothicArabic-Light);
+@font-face {
+  font-family: 'ITCHandelGothicArabic';
+  src: url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.eot');
+  src: url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.eot?#iefix') format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.woff2') format('woff2'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.woff') format('woff'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.ttf') format('truetype'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.svg#ITC Handel Gothic') format('svg');
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Tajawal:wght@300;400&display=swap');
+@font-face {
+  font-family: 'ITCHandelGothicArabic-Md';
+  src: url('//db.onlinewebfonts.com/t/00308ca5d1bcfc9bde77840856e53423.eot');
+  src: url('//db.onlinewebfonts.com/t/00308ca5d1bcfc9bde77840856e53423.eot?#iefix') format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/00308ca5d1bcfc9bde77840856e53423.woff2') format('woff2'),
+    url('//db.onlinewebfonts.com/t/00308ca5d1bcfc9bde77840856e53423.woff') format('woff'),
+    url('//db.onlinewebfonts.com/t/00308ca5d1bcfc9bde77840856e53423.ttf') format('truetype'),
+    url('//db.onlinewebfonts.com/t/00308ca5d1bcfc9bde77840856e53423.svg#ITCHandelGothicArabic-Md') format('svg');
+}
+
+@import url(//db.onlinewebfonts.com/c/392d212424c7b7469378d9b505d69c1a?family=ITC+Handel+Gothic);
+@font-face {
+  font-family: 'ITCHandelGothicArabic';
+  src: url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.eot');
+  src: url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.eot?#iefix') format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.woff2') format('woff2'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.woff') format('woff'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.ttf') format('truetype'),
+    url('//db.onlinewebfonts.com/t/392d212424c7b7469378d9b505d69c1a.svg#ITC Handel Gothic') format('svg');
+}
+
+input[type='date'] {
+  direction: rtl;
+  position: relative;
+  padding: 10px;
+  text-indent: 10px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+input[type='date']:before {
+  background: none;
+  display: block;
+  /* content: 'تاريخ الميلاد'; */
+  /* width: 300px;  */
+  /* height: 200px;  */
+  /* position: absolute; */
+  color: #808080;
+  font-family: 'ITCHandelGothicArabic-Md';
+  letter-spacing: 0px;
+  color: #808080;
+  opacity: 1;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 710px) {
+  input[type='date']:before {
+    font-size: 12px;
+  }
+}
+input[type='date']::placeholder:before {
+  content: '';
+}
+input[type='date']::placeholder {
+  font-family: 'ITCHandelGothicArabic-Md';
+  letter-spacing: 0px;
+  color: #808080;
+  opacity: 1;
+  font-size: 16px;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+  /* display: none; */
+  color: #808080;
+  -webkit-appearance: none;
+}
+
+input[type='date']:before {
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+  display: block;
+}
+
+/* only for FF */
+@-moz-document url-prefix() {
+  input[type='date']:before {
+    content: attr(placeholder) !important;
+    margin-right: 0.5em;
+    display: block;
+  }
+}

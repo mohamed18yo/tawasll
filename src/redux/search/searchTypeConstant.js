@@ -1,0 +1,4 @@
+
+export const SEARCH_START = "USER_SEARCH_START";
+export const SEARCH_FIALD = "USER_SEARCH_FIALD";
+export const SEARCH_SUCCESS = "USER_SEARCH_SUCCESS";
