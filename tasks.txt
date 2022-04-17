@@ -1,4 +1,0 @@
-- search for posts and persons
-- img for posts "create post"
-- update user need img update
-

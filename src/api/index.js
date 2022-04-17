@@ -10,7 +10,7 @@ import {
     useToken
 } from "../utils/getToken";
 
-export const BASE_URL = "https://tawsal.net";
+export const BASE_URL = "https://api.tawsal.net";
 
 
 const axiosInstance = axios.create({

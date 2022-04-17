@@ -43,7 +43,7 @@ function Post(props) {
       <PostHeader>
         <PostUserImg
           alt={props?.user?.name}
-          src={`https://tawsal.net/users/avatars/${avatar}`}
+          src={`https://api.tawsal.net/users/avatars/${avatar}`}
         />
         <FlexCol>
           <Typography style={{ margin: '0 .5rem' }}>{name}</Typography>
@@ -60,7 +60,7 @@ function Post(props) {
             <Img
               width={'100%'}
               style={{ margin: 'auto', maxHeight: '300px' }}
-              src={`https://tawsal.net/posts/medias/${props?.files[0]?.url}`}
+              src={`https://api.tawsal.net/posts/medias/${props?.files[0]?.url}`}
             />
           )}
 
@@ -174,7 +174,7 @@ function Post(props) {
         <Img
           radius="6px"
           style={{ height: '40px', width: '40px', borderRadius: '6px' }}
-          src={`https://tawsal.net/users/avatars/${avatar}`}
+          src={`https://api.tawsal.net/users/avatars/${avatar}`}
         />
         <InputComent
           value={commentVal}

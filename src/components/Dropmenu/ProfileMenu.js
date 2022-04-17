@@ -33,7 +33,7 @@ function ProfileMenu(props) {
         >
           <Img
             style={{ height: '30px', width: '30px', marginLeft: '.5rem', borderRadius: '50%' }}
-            src={`https://tawsal.net/users/avatars/${user.avatar}`}
+            src={`https://api.tawsal.net/users/avatars/${user.avatar}`}
           />{' '}
           {props.user}
         </Typography>

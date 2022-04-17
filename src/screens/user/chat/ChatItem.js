@@ -14,7 +14,7 @@ function ChatItem(props) {
         }}
         style={{ width: '70%' }}
       >
-        <Img width={'50px'} style={{ height: '50px',borderRadius:"50%", margin: '0 0 0 1rem' }} src={`https://tawsal.net/users/avatars/${props.userDetails.avatar}`} />
+        <Img width={'50px'} style={{ height: '50px',borderRadius:"50%", margin: '0 0 0 1rem' }} src={`https://api.tawsal.net/users/avatars/${props.userDetails.avatar}`} />
         <FlexCol style={{ width: '50%' }}>
           <ChatUser>{props.userDetails?.name} </ChatUser>
           <MsgContent IsNew={props.IsNew}>مرحبا !</MsgContent>

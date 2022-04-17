@@ -47,7 +47,7 @@ function AddPost() {
       <Divider />
       <form onSubmit={formik.handleSubmit}>
         <InnserWrapper>
-          <AddPostImg alt={user?.name} src={`https://tawsal.net/users/avatars/${user.avatar}`} />
+          <AddPostImg alt={user?.name} src={`https://api.tawsal.net/users/avatars/${user.avatar}`} />
           <TextArea
             name={'text'}
             value={formik.values?.text}

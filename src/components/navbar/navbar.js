@@ -60,7 +60,7 @@ function Navbar() {
           <NotificationBox>
             <NotificationsIcon  onClick={() => setIsMenuOpen(!isMenuOpen)} />
             <UserImg
-              src={`https://tawsal.net/users/avatars/${user.avatar}`}
+              src={`https://api.tawsal.net/users/avatars/${user.avatar}`}
             />
             <Span onClick={() => setVisible(!visible)}>
               <Typography
@@ -77,7 +77,7 @@ function Navbar() {
             <Img
               onClick={() => setVisible(!visible)}
               style={{ height: '40px', width: '40px', borderRadius: '50%' }}
-              src={`https://tawsal.net/users/avatars/${user.avatar}`}
+              src={`https://api.tawsal.net/users/avatars/${user.avatar}`}
             />
           </UserBox>
         <ProfileMenu user={user?.name} isOpen={visible} setIsOpen={setVisible} />

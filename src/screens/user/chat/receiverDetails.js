@@ -8,7 +8,7 @@ function ReceiverDetails() {
   const resever = state.chats.resever;
   return (
     resever.name ? <ReceiverDetailsBox>
-      <Img style={{height:"120px",width:"120px", borderRadius:"50%"}} src={`https://tawsal.net/users/avatars/${resever.avatar}`} />
+      <Img style={{height:"120px",width:"120px", borderRadius:"50%"}} src={`https://api.tawsal.net/users/avatars/${resever.avatar}`} />
       <Typography>{resever.name} </Typography>
       <Typography color="#707070">{resever.email}</Typography>
       <Typography fontSize="12px" color="#707070">

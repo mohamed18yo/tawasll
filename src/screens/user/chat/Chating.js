@@ -51,8 +51,8 @@ function Chating() {
             IsMyMsg={ms.sender_id === id}
             Img={
               ms.sender_id === id
-                ? `https://tawsal.net/users/avatars/${avatar}`
-                : `https://tawsal.net/users/avatars/${resever.avatar}`
+                ? `https://api.tawsal.net/users/avatars/${avatar}`
+                : `https://api.tawsal.net/users/avatars/${resever.avatar}`
             }
           />
         ))}

@@ -16,7 +16,7 @@ import { UpdateUser } from '../../../../redux/user/userAction';
 import { useDispatch } from 'react-redux';
 import { Boundary } from '../../../../components/Boundary/Boundary';
 
-const URL = 'https://tawsal.net/users/avatars';
+const URL = 'https://api.tawsal.net/users/avatars';
 
 export const UpdateProfile = () => {
   // const { user } = useSelector((state) => state.userDetailes.user);

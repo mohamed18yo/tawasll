@@ -30,7 +30,7 @@ function UserCard(props) {
 console.log("userProf", userProfile);
   return (
     <UserCardBox height={props.height} paddingTop={props.paddingTop}>
-      <CardImg  src={`https://tawsal.net/users/avatars/${userProfile?.avatar}`} />
+      <CardImg  src={`https://api.tawsal.net/users/avatars/${userProfile?.avatar}`} />
       <FlexCol style={{alignItems:"center"}}>
         <UserCardTypoUserName>{userProfile?.name} </UserCardTypoUserName>
       <UserCardTypoCat style={{ color:"#808080"}}>
