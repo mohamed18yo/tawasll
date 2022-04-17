@@ -8,8 +8,8 @@ export const WrapperInput = styled('div')`
 margin-right: 0px; */
 
   @media (max-width: 720px) {
-    margin: 1rem 0 0 0;
-}
+    margin: 1.5rem 0 2rem 0 !important;
+  }
 `;
 export const Input = styled('input')`
   border-radius: 6px;
@@ -19,8 +19,6 @@ export const Input = styled('input')`
   width: 100%;
   outline: none;
   border: none;
-
-
 
   @media (min-width: 320px) {
     height: 40px;
