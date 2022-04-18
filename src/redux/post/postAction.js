@@ -55,9 +55,16 @@ export const CreatePostAction = (value, callback) => {
         type: CREATE_POST_START,
       });
 
+     
       let data = new FormData();
       data.append('text', value.text);
-      data.append('medias[]', value.medias);
+      data.append('medias[]',value.medias);
+      if(value.medias.length===0){
+        data.delete('medias[]');
+      }
+      // console.log("med",value.medias);
+       
+      
 
       const res = await Api.post('/posts', data);
       dispatch({
@@ -74,7 +81,7 @@ export const CreatePostAction = (value, callback) => {
       callback?.();
     } catch (error) {
       notify('error', error?.response?.data?.message || error.message);
-
+      
       dispatch({
         payload: error?.response?.data?.message || error.message,
         type: CREATE_POST_FIELD,
